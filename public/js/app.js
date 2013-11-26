@@ -10,12 +10,17 @@ $(document).ready(function(){
     $.get(ruta, function(data) {
       if (data == 'illegal'){
         alert("Illegal move!")
-      } else if (data.length < 3){
-        //alert("Datos "+data);
+      } else if (data.length < 3)  {
+
+        //alert("Datos "+data+" .");
         //alert("Celda "+event.target.id);
-    
-        $("#"+event.target.id).addClass("circle");
-        $("#"+data).addClass( "cross" );
+        //alert(data.length);
+        if (data.length > 0){
+          $("#"+event.target.id).addClass("circle");
+          $("#"+data).addClass( "cross" );
+        }else{
+          alert("No se puede elegir escoja otra casilla");
+        }
       }else{
         //Redirigir a la pagina de ganador o perdedor o empate
         //alert(data);
