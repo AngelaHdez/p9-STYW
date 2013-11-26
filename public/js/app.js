@@ -3,7 +3,7 @@ $(document).ready(function(){
   	//alert(e.target.id);
     $.get(e.srcElement.id, function(data) {
 
-      //alert( "Load was performed." );
+    	alert("entro");
     });
   });
 });

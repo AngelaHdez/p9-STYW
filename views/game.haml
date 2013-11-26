@@ -4,7 +4,7 @@
     %form{:action=>"/post",:method=>"post"}
       Registrate: 
       %input{:type=>"text",:name=>"juego[nombre]",:placeholder=>"user"}
-      %input{:type=>"text",:name=>"juego[contraseña]",:placeholder=>"password"}
+      %input{:type=>"text",:name=>"juego[contraseña]", :type=>"password",:placeholder=>"password"}
       %input{:type=>"submit",:value=>"enviar"}
   -else
     %form{:action=>"/post",:method=>"post"}

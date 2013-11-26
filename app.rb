@@ -173,15 +173,15 @@ get %r{^/([abc][123])?$} do |human|
       puts "I played: #{computer}!"
       puts "Tablero:  #{board.inspect}"
       redirect to ('/computerwins') if computer_wins?
-      return computer
+
     end
   else
     session["bs"] = inicializa()
     puts "session = "
     pp session
-    return "illegal"
+    computer = "illegal"
   end
-
+  computer
   #haml :game, :locals => { :b => board, :m => ''  }
 end
 
