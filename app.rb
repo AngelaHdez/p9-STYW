@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'rubygems'
 require 'sass'
 require 'pp'
 require 'haml'
@@ -159,6 +160,7 @@ get "/" do
 end
 
 get %r{^/([abc][123])?$} do |human|
+  puts "ESTOY ENTRANDOOOOO"
   if human then
     puts "You played: #{human}!"
     puts "session: "
@@ -181,8 +183,8 @@ get %r{^/([abc][123])?$} do |human|
     pp session
     resultado = "illegal"
   end
-  resultado
   puts resultado
+  resultado
   #haml :game, :locals => { :b => board, :m => ''  }
 end
 

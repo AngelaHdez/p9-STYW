@@ -1,14 +1,15 @@
 $(document).ready(function(){
-  $(".cell").click(function(e) {
-  	alert(e.target.id);
-  	var pathname = window.location.pathname;
-  	//alert(pathname);
-  	//alert(e.srcElement.id);
-  	var ruta =pathname + e.srcElement.id;
-  	//alert(ruta);
+  $(".cell").click(function(event) {
+    alert(event.target.id);
+    var pathname = window.location.pathname;
+    alert(pathname);
+   // alert(event.srcElement.id);
+    var ruta =pathname + event.target.id;
+    //alert("La ruta " + ruta);
 
-    $.get(ruta, function(data,status){
-      alert("Data: " + data + "\nStatus: " + status);
+    $.get(ruta, function(data) {
+        alert("Datos "+data);
     });
   });
 });
+
