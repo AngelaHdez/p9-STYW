@@ -1,0 +1,122 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: url("/images/fondo.jpg") repeat;
+  background-size: cover; }
+
+.gameboard {
+  width: 400px;
+  margin: 30px auto;
+  text-align: center; }
+
+.gamerow {
+  clear: both; }
+
+.cell {
+  color: blue;
+  background-color: white;
+  opacity: 0.8;
+  width: 47.05882px;
+  height: 47.05882px;
+  margin: 3.92157px;
+  padding: 36.1991px;
+  float: left; }
+  .cell:hover {
+    color: black; }
+
+#a1:hover {
+  background-color: #c8fe2e; }
+
+#a2:hover {
+  background-color: #642efe; }
+
+#a3:hover {
+  background-color: #c8fe2e; }
+
+#b1:hover {
+  background-color: #642efe; }
+
+#b2:hover {
+  background-color: #c8fe2e; }
+
+#b3:hover {
+  background-color: #642efe; }
+
+#c1:hover {
+  background-color: #c8fe2e; }
+
+#c2:hover {
+  background-color: #642efe; }
+
+#c3:hover {
+  background-color: #c8fe2e; }
+
+.cross {
+  background: url("/images/bob.png") no-repeat;
+  background-size: cover; }
+
+.circle {
+  background: url("/images/bart.png") no-repeat;
+  background-size: cover; }
+
+.base-font, .message {
+  color: #ff4000;
+  font: 22px Helvetica, Arial, sans-serif; }
+
+.message {
+  display: inline;
+  background-color: transparent; }
+
+.header {
+  text-align: right;
+  background-color: black;
+  color: white;
+  margin-right: 30px;
+  margin-top: 20px; }
+
+a {
+  color: black; }
+
+.MyButton {
+  -moz-box-shadow: inset 0px 1px 0px 0px #fce2c1;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #fce2c1;
+  box-shadow: inset 0px 1px 0px 0px #fce2c1;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #fb9e25));
+  background: -moz-linear-gradient(center top, #ffc477 5%, #fb9e25 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25');
+  background-color: #ffc477;
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-bottom-left-radius: 20px;
+  text-indent: 0;
+  border: 1px solid #eeb44f;
+  display: inline-block;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  height: 50px;
+  line-height: 50px;
+  width: 100px;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 1px 1px 0px #cc9f52; }
+
+.MyButton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fb9e25), color-stop(1, #ffc477));
+  background: -moz-linear-gradient(center top, #fb9e25 5%, #ffc477 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fb9e25', endColorstr='#ffc477');
+  background-color: #fb9e25; }
+
+.MyButton:active {
+  position: relative;
+  top: 1px; }

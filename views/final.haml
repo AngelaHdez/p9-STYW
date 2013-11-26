@@ -1,0 +1,30 @@
+.header
+  Introduce un nombre de usuario que no este asignado
+  -if (!juego)
+    %form{:action=>"/post",:method=>"post"}
+      Registrate:
+      %input{:type=>"text",:name=>"juego[nombre]",:placeholder=>"user"}
+      %input{:type=>"text",:name=>"juego[contraseña]",:placeholder=>"password"}
+      %input{:type=>"submit",:value=>"enviar"}
+  -else
+    %form{:action=>"/post",:method=>"post"}
+      Bienvenido, #{juego}!
+      %input{:type=>"hidden",:value=>"1",:name=>"logout"}
+      %input{:type=>"submit",:value=>"logout"}
+
+.MyButton
+  %a{:href=>"/juego"}
+    Ranking
+
+.gameboard
+  - HORIZONTALS.each do |row| 
+    .gamerow
+      - row.each do |p|
+        %a{:href=>"/"}
+          %div{:id => "#{p}", :class => "cell #{b[p]}"}
+  .message
+    %h1= m
+
+.MyButton
+  %a{:href=>"/"}
+    Atrás

@@ -1,0 +1,16 @@
+<div class="gameboard">
+  <% Board::HORIZONTALS.each do |row| %>
+    <div class="gamerow">
+      <% row.each do |p|%>
+        <a href="/">
+          <div class="cell <%=b[p]%>" id="<%=p%>">
+          </div>
+        </a>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+<div class="message">
+  <h1><%= m %></h1>
+</div>
+
