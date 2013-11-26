@@ -44,4 +44,4 @@ IMPORTANTE
 ---------------------
 	Local: htpp://localhost:4567
 
-	Heroku: http://intense-reaches-6581.herokuapp.com/
+	Heroku: http://still-garden-1868.herokuapp.com/
