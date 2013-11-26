@@ -1,5 +1,5 @@
 .header
-  Introduce un nombre de usuario que no este asignado2
+  Introduce un nombre de usuario que no este asignado
   -if (!juego)
     %form{:action=>"/post",:method=>"post"}
       Registrate:
@@ -20,10 +20,11 @@
   - HORIZONTALS.each do |row| 
     .gamerow
       - row.each do |p|
-        %a{:href=>"/"}
-          %div{:id => "#{p}", :class => "cell #{b[p]}"}
+        #%a{:href=>"/"}
+        %div{:id => "#{p}", :class => "cell #{b[p]}"}
   .message
     %h1= m
+
 
 .MyButton
   %a{:href=>"/"}
