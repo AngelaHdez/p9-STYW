@@ -6,9 +6,9 @@ $(document).ready(function(){
   	//alert(e.srcElement.id);
   	var ruta =pathname + e.srcElement.id;
   	//alert(ruta);
-    $.get(ruta, function(data) {
 
-    	alert("entro");
+    $.get(ruta, function(data,status){
+      alert("Data: " + data + "\nStatus: " + status);
     });
   });
 });
