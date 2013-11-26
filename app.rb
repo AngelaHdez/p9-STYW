@@ -156,11 +156,10 @@ helpers TicTacToe
 get "/" do 
   puts "entro aqui"
   session["bs"] = inicializa()
-  haml :game, :locals => { :b => board, :m => 'Empieza a jugar'  }
+  haml :game, :locals => { :b => board, :m => 'A jugar'  }
 end
 
 get %r{^/([abc][123])?$} do |human|
-  puts "ESTOY ENTRANDOOOOO"
   if human then
     puts "You played: #{human}!"
     puts "session: "
@@ -169,12 +168,12 @@ get %r{^/([abc][123])?$} do |human|
       board[human] = TicTacToe::CIRCLE
       # computer = board.legal_moves.sample
       computer = smart_move
-      redirect to ('/humanwins') if human_wins?
-      redirect to('/tie') unless computer
+      return '/humanwins' if human_wins?
+      return '/tie' unless computer
       board[computer] = TicTacToe::CROSS
       puts "I played: #{computer}!"
       puts "Tablero:  #{board.inspect}"
-      redirect to ('/computerwins') if computer_wins?
+      return '/computerwins' if computer_wins?
       resultado = computer
     end
   else
@@ -322,6 +321,7 @@ post '/post' do
   end
     redirect '/'
 end
+
 
 
 not_found do
