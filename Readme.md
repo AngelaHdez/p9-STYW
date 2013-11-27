@@ -32,7 +32,6 @@ IMPORTANTE
 	sudo apt-get install postgresql-client
 	sudo apt-get install postgresql
 
-	Usar Chrome
 
 3. Ejecucción
 -------------
