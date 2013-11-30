@@ -130,6 +130,10 @@ a {
   margin-left: 5%;
   margin-top: 10%; }
 
+.ui-helper-clearfix {
+  margin-left: 5%;
+  margin-top: 10%; }
+
 .ui-button {
   margin-left: 70%;
   border: 3px solid #000000;
@@ -138,7 +142,8 @@ a {
   font-size: 19px;
   height: 30px;
   width: 65px;
-  text-align: center; }
+  text-align: center;
+  background-color: orange; }
 
 .ui-widget-header {
   margin-left: 5%;
