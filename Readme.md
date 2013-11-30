@@ -16,6 +16,8 @@ App currently contains:
 -----------
 	
 	Añadir una base de datos a la práctica del TicTacToe de manera que se lleve la cuenta de los usuarios registrados, las partidas jugadas, ganadas y perdídas. 
+	
+	Añadir Jquery.
 
 	Mejorar las hojas de estilo usando SAAS . Deberán mostrarse las celdas pares e impares en distintos colores. También deberá mostrarse una lista de jugadores con sus registros.
 
