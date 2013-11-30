@@ -19,7 +19,7 @@ $(document).ready(function(){
           $("#"+event.target.id).addClass("circle");
           $("#"+data).addClass( "cross" );
         }else{
-          alert("No se puede elegir escoja otra casilla");
+          alert("No se puede elegir escoja otra casilla").css("color", "green");
         }
       }else{
         //Redirigir a la pagina de ganador o perdedor o empate
