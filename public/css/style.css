@@ -122,7 +122,7 @@ a {
   top: 1px; }
 
 .ui-dialog {
-  color: orange;
+  color: #ff4000;
   background-color: black;
   border-color: #ff4000;
   border-style: solid;
@@ -135,6 +135,7 @@ a {
   margin-top: 10%; }
 
 .ui-button {
+  margin-left: 60%;
   border: 3px solid #000000;
   color: #000000;
   font-family: Arial;
@@ -150,4 +151,8 @@ a {
   font-weight: bold; }
 
 .ui-dialog .ui-dialog-titlebar {
-  position: relative; }
+  position: relative;
+  margin-left: 5%; }
+
+#dialog p {
+  margin-left: 5%; }
