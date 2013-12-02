@@ -162,11 +162,12 @@ a{
 .ui-dialog{
   color:orange;
   background-color: black;
-  border-color:  orange;
+  border-color:  $orange;
   border-style:solid;
   border-width:5px;
   margin-left: 5%;
   margin-top: 10%;
+
 }
 
 .ui-helper-clearfix {
@@ -176,7 +177,7 @@ a{
 
 
 .ui-button{
-  margin-left: 70%;
+  
   border:3px solid #000000;
   color:#000000;
   font-family:Arial;
@@ -184,7 +185,7 @@ a{
   height:30px;
   width:65px;
   text-align:center;
-  background-color:orange;
+  background-color:$orange;
 
 }
 
